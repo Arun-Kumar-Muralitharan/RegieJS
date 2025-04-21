@@ -1,0 +1,18 @@
+[
+    {
+    "baseURL": "https://www.dempblaze.com",
+    "product": {
+        "name": "Samsung galaxy s6",
+        "category": "Phones",
+        "price": 360,
+        "description": "Samsung galaxy s6 is a great phone with a lot of features.",
+        "image": "https://www.dempblaze.com/img/samsung-galaxy-s6.jpg"
+        }
+    },
+
+    {
+    "user_name": "demoblazetest@test.com",
+    "password": "Test@123",
+    "role": "admin"
+    }
+]
