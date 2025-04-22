@@ -20,7 +20,7 @@ npm run report
 
 ## Prerequisites
 - NPM
-- IDE to build and run the Framework
+- IDE to build and run the Framwework
 
 ## Setting up the Tests
 Git Clone the framework from the Git repository. The framwork implement Page Object Model(POM). The user can add the methods and actions to the pages and write the tests in the tests folder.
@@ -37,3 +37,7 @@ The Framework comes with support for multiple environments. The '.env.qa' and '.
 
 ## Docker Usage
 Docker compose is used to trigger the build and exucute the Test cases
+
+## Tests and Explanations
+- UI Test: There are 2 UI Tests where the first test works with Login and Logout, the second has the workflow of ordering an item
+- API Tests constitute to GET, POST and DELETE requests to RestAssured
