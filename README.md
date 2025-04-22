@@ -20,9 +20,20 @@ npm run report
 
 ## Prerequisites
 - NPM
-- IDE to build and run the Framwework
+- IDE to build and run the Framework
 
 ## Setting up the Tests
 Git Clone the framework from the Git repository. The framwork implement Page Object Model(POM). The user can add the methods and actions to the pages and write the tests in the tests folder.
 
 ## Project Structure
+- The pages can be added to the pages folder as js files
+- The Test files to follow the file name 'xxxx.test.js'
+- Contunie to build the data folder with required data for testing
+- Continue to build new functions tailored to meet the custom components
+- Add common menthods that can be consumed everywhere under the common-methods
+
+## Environment Specifications
+The Framework comes with support for multiple environments. The '.env.qa' and '.env.prod' is currently employed to build the framework
+
+## Docker Usage
+Docker compose is used to trigger the build and exucute the Test cases
