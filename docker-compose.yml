@@ -1,7 +1,29 @@
-version: '3'
+# docker-compose.yml
+version: '3.8'
+
 services:
   tests:
     build: .
     volumes:
       - .:/app
-    command: npx playwright test
+    environment:
+      - NODE_ENV=ci
+    command: npm run test
+
+  api-mock:
+    image: typicode/json-server
+    volumes:
+      - ./mock-api:/data
+    command: --watch /data/db.json
+    ports:
+      - "3001:3000"
+
+  allure:
+    image: frankescobar/allure-docker-service
+    ports:
+      - "5050:5050"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 3
+    volumes:
+      - ./allure-results:/app/allure-results
+      - ./allure-report:/app/default-reports
